@@ -2,11 +2,11 @@ import { experiences, skills } from "@/data/experience";
 
 const Experience = () => {
 	return (
-		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10">
+		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-7">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 				{/* Skills Section */}
 				<div>
-					<h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold mb-5">Skills</h2>
+					<h2 className="text-3xl sm:text-4xl font-semibold mb-3 md:mb-5">Skills</h2>
 					<div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
 						{skills.map((skill) => (
 							<div
@@ -21,7 +21,7 @@ const Experience = () => {
 
 				{/* Experience Section */}
 				<div>
-					<h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold mb-8">Experience</h2>
+					<h2 className="text-3xl sm:text-4xl font-semibold mb-3 md:mb-5">Experience</h2>
 					<div className="space-y-8">
 						{experiences.map((exp, index) => (
 							<div key={index}>
