@@ -6,7 +6,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 const Services = () => {
 	return (
 		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10">
-			<h1 className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold">
+			<h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold">
 				What I do?
 			</h1>
 
