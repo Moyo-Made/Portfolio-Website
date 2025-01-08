@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import React from "react";
+import Portfolio from "@/components/Portfolio";
 
 const page = () => {
 	return (
@@ -13,6 +14,7 @@ const page = () => {
       <About />
       <Services />
       <Experience />
+      <Portfolio />
 		</div>
 	);
 };
