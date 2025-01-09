@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
 	return (
-		<div className="relative min-h-screen bg-white flex items-center px-4 md:px-8 lg:px-16">
+		<div id="home" className="relative min-h-screen bg-white flex items-center px-4 md:px-8 lg:px-16">
 			<div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 min-h-screen mt-20 sm:mt-0">
 				{/* Left Content */}
 				<div className="flex-1 space-y-6 ml-0 sm:ml-16">
