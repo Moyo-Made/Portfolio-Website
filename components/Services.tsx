@@ -5,7 +5,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 
 const Services = () => {
 	return (
-		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10">
+		<div id="services" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10">
 			<h1 className="text-3xl sm:text-4xl font-semibold">
 				What I do?
 			</h1>
@@ -18,8 +18,8 @@ const Services = () => {
 				resulting in a seamless and engaging user experience.
 			</p>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 md:gap-8 mt-10">
-				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px]">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 md:gap-8 mt-10 ">
+				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px] hover:scale-105 transition-transform duration-300">
 					<div className="flex gap-4 items-center">
 						<FaLaptopCode className="text-[#009bdf]" size={30} />
 						<h1 className="uppercase text-xl md:text-2xl font-medium">Web development</h1>
@@ -34,10 +34,10 @@ const Services = () => {
 					</div>
 				</div>
 
-				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px]">
+				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px] hover:scale-105 transition-transform duration-300">
 					<div className="flex gap-4 items-center">
 						<IoPhonePortraitOutline className="text-[#009bdf]" size={30} />
-						<h1 className="uppercase text-xl md:text-2xl font-medium">App development</h1>
+						<h1 className="uppercase text-xl md:text-2xl font-medium ">App development</h1>
 					</div>
 
 					<div className="ml-12">
