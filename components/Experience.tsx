@@ -2,7 +2,7 @@ import { experiences, skills } from "@/data/experience";
 
 const Experience = () => {
 	return (
-		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-7">
+		<div id="skills" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-7">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 				{/* Skills Section */}
 				<div>
@@ -11,7 +11,7 @@ const Experience = () => {
 						{skills.map((skill) => (
 							<div
 								key={skill.name}
-								className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+								className="p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors hover:scale-105 duration-300"
 							>
 								<h3 className="font-semibold text-lg">{skill.name}</h3>
 							</div>
