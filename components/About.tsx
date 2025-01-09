@@ -8,7 +8,7 @@ const cardo = Cardo({
 
 const About = () => {
 	return (
-		<div className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-4 mb-10">
+		<div id="about" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-4 mb-10">
 			<div>
 				<h2 className="text-lg uppercase tracking-wider text-gray-600">
 					About me
