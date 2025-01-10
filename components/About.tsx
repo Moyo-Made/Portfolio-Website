@@ -1,14 +1,22 @@
+"use client";
+
 import React from "react";
 import { Cardo } from "next/font/google";
+
 
 const cardo = Cardo({
 	weight: ["400", "700"],
 	subsets: ["latin"],
 });
 
+
 const About = () => {
 	return (
-		<div id="about" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-4 mb-10">
+		<div
+			id="about"
+			className="blockanimation px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-4 mb-10"
+		>
+			
 			<div>
 				<h2 className="text-lg uppercase tracking-wider text-gray-600">
 					About me
