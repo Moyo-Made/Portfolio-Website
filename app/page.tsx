@@ -1,22 +1,12 @@
-import About from "@/components/About";
-import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
-import Navbar from "@/components/Navbar";
-import Services from "@/components/Services";
-import React from "react";
-import Portfolio from "@/components/Portfolio";
+import App from '@/components/App'
+import React from 'react'
 
 const page = () => {
-	return (
-		<div>
-			<Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Experience />
-      <Portfolio />
-		</div>
-	);
-};
+  return (
+	<div>
+	  <App />
+	</div>
+  )
+}
 
-export default page;
+export default page
