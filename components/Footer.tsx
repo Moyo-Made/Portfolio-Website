@@ -68,7 +68,7 @@ const Footer = () => {
 
 	return (
 		<footer id="contact" className="relative bg-white">
-			<div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
+			<div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
 
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
