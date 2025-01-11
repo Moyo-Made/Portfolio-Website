@@ -7,7 +7,9 @@ import React, { useState } from "react";
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [activeSection, setActiveSection] = useState("");
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [clickedSection, setClickedSection] = useState("");
 	const NAV_HEIGHT = 64;
 
@@ -74,12 +76,12 @@ const Footer = () => {
 					<div className="lg:col-span-1">
 						<div className="space-y-6">
 							<h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-								Let's Create Together
+								Let&#39;s Create Together
 							</h3>
 							<p className="text-gray-600 leading-relaxed">
-								I'm always excited to connect with fellow developers, potential
+								I&#39;m always excited to connect with fellow developers, potential
 								clients, and anyone passionate about technology. Whether you
-								have a project in mind or just want to say hello, I'm here to
+								have a project in mind or just want to say hello, I&#39;m here to
 								collaborate.
 							</p>
 							<div className="flex flex-wrap gap-3">
@@ -116,7 +118,7 @@ const Footer = () => {
 								Get in Touch
 							</h3>
 							<p className="text-gray-600">
-								Have a project in mind? Let's discuss how we can work together
+								Have a project in mind? Let&#39;s discuss how we can work together
 								to bring your ideas to life.
 							</p>
 							<div className="space-y-4">

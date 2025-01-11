@@ -27,7 +27,7 @@ const About = () => {
 			<h1
 				className={`${cardo.className} text-xl sm:text-2xl md:text-3xl font-bold pt-5 leading-10`}
 			>
-				I'm a frontend developer with 3 years of experience, dedicated to
+				I&#39;m a frontend developer with 3 years of experience, dedicated to
 				building web applications that not only meet client needs but also
 				deliver exceptional user experiences.
 			</h1>
@@ -46,18 +46,18 @@ const About = () => {
 					<p className="text-lg font-normal">
 						With years of experience in frontend development, I have honed the
 						skills to understand client requirements and deliver solutions
-						aligned with the latest trends. I've collaborated with businesses
+						aligned with the latest trends. I&#39;ve collaborated with businesses
 						across various industries, making me a reliable partner for your
 						project.
 					</p>
 
 					<p className="mt-5 text-lg text-gray-500 font-normal">
-						I've spent most of these years working in areas like responsive web
+						I&#39;ve spent most of these years working in areas like responsive web
 						applications, landing pages, interactive components, and app UI/UX,
 						to my current role focusing on creating seamless user experiences
 						for web platforms. Having contributed to numerous live projects, I
 						can offer valuable suggestions and innovative ideas to move forward
-						with. With me, you're not limited to a single approach; I provide a
+						with. With me, you&#39;re not limited to a single approach; I provide a
 						range of options that we can refine together to achieve the best
 						results.
 					</p>

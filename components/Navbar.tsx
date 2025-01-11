@@ -11,6 +11,7 @@ const Navbar = () => {
 	const NAV_HEIGHT = 64;
 
  // Determine if a section is substantially visible
+ // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface SectionElement {
   id: string;
   element: HTMLElement | null;

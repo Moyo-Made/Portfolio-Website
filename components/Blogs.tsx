@@ -1,6 +1,7 @@
 import React from "react";
 import { Calendar, Clock, ArrowUpRight } from "lucide-react";
 import { blogs } from "@/data/articles";
+import Image from "next/image";
 
 const BlogSection = () => {
 	const formatDate = (dateString: string): string => {
@@ -31,9 +32,11 @@ const BlogSection = () => {
 							className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
 						>
 							<div className="aspect-w-16 aspect-h-9 relative">
-								<img
+								<Image
 									src={blog.image}
 									alt={blog.title}
+									width={1920}
+									height={192}
 									className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
 								/>
 								<div className="absolute top-4 right-4">

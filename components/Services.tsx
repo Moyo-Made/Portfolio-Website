@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5";
@@ -27,7 +26,7 @@ const Services = () => {
 
 					<div className="ml-12">
 						<p className="text-md font-normal mt-1 text-gray-600 max-w-[300px]">
-							If you're looking for a developer to handle the research and
+							If you&#39;re looking for a developer to handle the research and
 							development of your website, I am a seasoned professional ready to
 							bring your vision to life with expertise and dedication.
 						</p>
@@ -42,7 +41,7 @@ const Services = () => {
 
 					<div className="ml-12">
 						<p className="text-md font-normal mt-1 text-gray-600 max-w-[300px]">
-							If you're seeking a user-friendly app that will captivate and
+							If you&#39;re seeking a user-friendly app that will captivate and
 							attract more mobile users, I can help design and build a platform
 							with a modern, trendy look and feel, ensuring an engaging and
 							seamless user experience.

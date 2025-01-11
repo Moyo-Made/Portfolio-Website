@@ -37,7 +37,7 @@ const Hero = () => {
 							<p className="text-lg text-gray-600 max-w-[500px]">
 								As a passionate frontend developer, I specialize in turning
 								visionary concepts into stunning, user-friendly web
-								applications. Let's collaborate to bring your ideas to life and
+								applications. Let&#39;s collaborate to bring your ideas to life and
 								create solutions that make a difference in the world.
 							</p>
 						</div>
