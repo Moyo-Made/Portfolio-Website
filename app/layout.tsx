@@ -12,7 +12,11 @@ const barlowSemiCondensed = Barlow_Semi_Condensed({
 export const metadata: Metadata = {
   title: "Moyomade | Frontend Developer",
   description: 
-"Welcome to Moyomade's portfolio. Explore projects and skills of a passionate frontend developer."
+"Welcome to Moyomade's portfolio. Explore projects and skills of a passionate frontend developer.",
+icons: {
+  icon: '/favicon.png',
+},
+
 };
 
 export default function RootLayout({

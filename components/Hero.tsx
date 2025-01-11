@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
 	return (
@@ -65,9 +66,11 @@ const Hero = () => {
 				{/* Right Content - Image */}
 				<div className="relative flex justify-center items-center">
 					<div className="aspect-square rounded-full overflow-hidden bg-gray-900 mt-0 w-[280px] sm:w-[300px] md:mt-20 lg:mt-0 md:w-[350px] lg:w-[450px]">
-						<img
+						<Image
 							src="/images/profile.PNG"
 							alt="Profile"
+							width={1920}
+							height={1920}
 							className="w-full h-full object-cover"
 						/>
 					</div>
