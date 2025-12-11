@@ -4,31 +4,33 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 
 const Services = () => {
 	return (
-		<div id="services" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10">
-			<h1 className="text-3xl sm:text-4xl font-semibold">
-				What I do?
-			</h1>
+		<div
+			id="services"
+			className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-20 mb-10"
+		>
+			<h1 className="text-3xl sm:text-4xl font-semibold">What I do</h1>
 
 			<p className="text-lg font-normal mt-5 text-gray-600">
-				From understanding your requirements to designing a blueprint and
-				delivering the final product, I handle every step in between. As a
-				frontend developer, I ensure that each phase, from concept to
-				deployment, is executed with precision and attention to detail,
-				resulting in a seamless and engaging user experience.
+				I design and build fast, responsive, and user-focused web interfaces. My
+				work combines modern frontend engineering with clean UI execution to
+				deliver websites and applications that look great, feel smooth, and
+				perform reliably across all devices.
 			</p>
 
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 md:gap-8 mt-10 ">
 				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px] hover:scale-105 transition-transform duration-300">
 					<div className="flex gap-4 items-center">
 						<FaLaptopCode className="text-[#009bdf]" size={30} />
-						<h1 className="uppercase text-xl md:text-2xl font-medium">Web development</h1>
+						<h1 className="uppercase text-xl md:text-2xl font-medium">
+							Web development
+						</h1>
 					</div>
 
 					<div className="ml-12">
 						<p className="text-md font-normal mt-1 text-gray-600 max-w-[300px]">
-							If you&#39;re looking for a developer to handle the research and
-							development of your website, I am a seasoned professional ready to
-							bring your vision to life with expertise and dedication.
+							I build modern, scalable websites using React, Next.js,
+							TypeScript, and Tailwind. From landing pages to full platforms, I
+							deliver fast, responsive, and accessible interfaces.
 						</p>
 					</div>
 				</div>
@@ -36,15 +38,16 @@ const Services = () => {
 				<div className="bg-[#f7f7f7] rounded-md shadow-md p-6 max-w-[400px] hover:scale-105 transition-transform duration-300">
 					<div className="flex gap-4 items-center">
 						<IoPhonePortraitOutline className="text-[#009bdf]" size={30} />
-						<h1 className="uppercase text-xl md:text-2xl font-medium ">App development</h1>
+						<h1 className="uppercase text-xl md:text-2xl font-medium ">
+							App development
+						</h1>
 					</div>
 
 					<div className="ml-12">
 						<p className="text-md font-normal mt-1 text-gray-600 max-w-[300px]">
-							If you&#39;re seeking a user-friendly app that will captivate and
-							attract more mobile users, I can help design and build a platform
-							with a modern, trendy look and feel, ensuring an engaging and
-							seamless user experience.
+							I develop clean, responsive applications with smooth interactions
+							and intuitive user flows. I focus on modern UI practices to ensure
+							your app feels polished and engaging on all devices.
 						</p>
 					</div>
 				</div>
