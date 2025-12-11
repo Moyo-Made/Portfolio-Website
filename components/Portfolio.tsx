@@ -1,6 +1,7 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 
 interface ProjectLinksProps {
 	github?: string;
@@ -39,7 +40,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = ({ github, demo }) => {
 
 const Portfolio = () => {
 	return (
-		<div id="portfolio" className="py-10 bg-gray-50">
+		<div id="projects" className="py-10 bg-gray-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center">
 					<h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
@@ -58,9 +59,11 @@ const Portfolio = () => {
 							className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
 						>
 							<div className="aspect-w-16 aspect-h-9 relative">
-								<img
+								<Image
 									src={project.image}
 									alt={project.title}
+									width={1270}
+									height={192}
 									className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
 								/>
 								<ProjectLinks github={project.github} demo={project.demo} />

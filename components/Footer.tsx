@@ -68,21 +68,21 @@ const Footer = () => {
 
 	return (
 		<footer id="contact" className="relative bg-white">
-			<div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
+			<div className="absolute top-0 left-0 right-0 h-px bg-gray-200"></div>
 
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
 					{/* About Section */}
 					<div className="lg:col-span-1">
 						<div className="space-y-6">
-							<h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+							<h3 className="text-2xl font-bold text-gray-900 ">
 								Let&#39;s Create Together
 							</h3>
 							<p className="text-gray-600 leading-relaxed">
-								I&#39;m always excited to connect with fellow developers, potential
-								clients, and anyone passionate about technology. Whether you
-								have a project in mind or just want to say hello, I&#39;m here to
-								collaborate.
+								I&#39;m always excited to connect with fellow developers,
+								potential clients, and anyone passionate about technology.
+								Whether you have a project in mind or just want to say hello,
+								I&#39;m here to collaborate.
 							</p>
 							<div className="flex flex-wrap gap-3">
 								{socials.map((social) => (
@@ -118,8 +118,8 @@ const Footer = () => {
 								Get in Touch
 							</h3>
 							<p className="text-gray-600">
-								Have a project in mind? Let&#39;s discuss how we can work together
-								to bring your ideas to life.
+								Have a project in mind? Let&#39;s discuss how we can work
+								together to bring your ideas to life.
 							</p>
 							<div className="space-y-4">
 								<a

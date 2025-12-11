@@ -14,7 +14,7 @@ const Hero = () => {
 			id="home"
 			className="first-letter:relative min-h-screen bg-white flex items-center px-4 md:px-8 lg:px-16"
 		>
-			<div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 min-h-screen mt-20 sm:mt-0">
+			<div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 md:gap-36 min-h-screen mt-20 sm:mt-0">
 				{/* Left Content */}
 				<div className="flex-1 space-y-6 ml-0 sm:ml-16">
 					<div className="mb-5">
@@ -28,18 +28,21 @@ const Hero = () => {
 						<h1 className="text-5xl md:text-6xl font-semibold mt-2">
 							Moyomade Adegbite
 						</h1>
-						<h3 className="text-2xl md:text-3xl text-gray-600 mt-2">
-							Your Next Frontend Developer
+						<h3 className="text-lg md:text-xl text-gray-600 mt-2">
+							Building Scalable, High-Performance Frontend Experiences
 						</h3>
 					</div>
 
 					<div className="space-y-2 pt-1">
 						<div className="flex items-center space-x-2">
 							<p className="text-lg text-gray-600 max-w-[500px]">
-								As a passionate frontend developer, I specialize in turning
-								visionary concepts into stunning, user-friendly web
-								applications. Let&#39;s collaborate to bring your ideas to life and
-								create solutions that make a difference in the world.
+								I’m a frontend developer with 3+ years of experience building
+								responsive, accessible, and high-performance web applications
+								using React, Next.js, and TypeScript. I’ve contributed to
+								products across EdTech, SocialEdTech, and FinTech, including a
+								ticketing platform for 4,000+ users and a full UGC marketplace
+								built end-to-end. I create scalable, maintainable interfaces
+								that deliver measurable impact.
 							</p>
 						</div>
 
@@ -63,7 +66,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				{/* Right Content - Image */}
+				{/* Image */}
 				<div className="relative flex justify-center items-center">
 					<div className="aspect-square rounded-full overflow-hidden bg-gray-900 mt-0 w-[280px] sm:w-[300px] md:mt-20 lg:mt-0 md:w-[350px] lg:w-[450px]">
 						<Image

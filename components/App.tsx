@@ -7,6 +7,7 @@ import React from "react";
 import Portfolio from "@/components/Portfolio";
 import BlogSection from "@/components/Blogs";
 import Footer from "@/components/Footer";
+import Achievements from "./Achievements";
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 			<Services />
 			<Experience />
 			<Portfolio />
+			<Achievements />
 			<BlogSection />
 			<Footer />
 		</div>
