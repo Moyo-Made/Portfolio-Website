@@ -10,36 +10,40 @@ interface Experience {
 }
 
 export const skills: Skill[] = [
-	{ name: "React" },
+	{ name: "React.js" },
 	{ name: "Next.js" },
 	{ name: "TypeScript" },
-	{ name: "Node.js" },
-	{ name: "TailwindCSS" },
 	{ name: "JavaScript" },
-	{ name: "HTML/CSS" },
+	{ name: "TailwindCSS" },
+	{ name: "Redux / Zustand" },
+	{ name: "React Query" },
+	{ name: "REST APIs" },
+	{ name: "GraphQL" },
 	{ name: "Git" },
+	{ name: "Jest" },
+	{ name: "Cypress" },
 ];
 
 export const experiences: Experience[] = [
 	{
-		period: "July 2024 - Aug 2024",
+		period: "Nov 2024 – Jun 2025",
 		role: "Frontend Developer",
-		company: "DevFest Lagos",
+		company: "TechSynergy (Remote)",
 		description:
-			"As a Frontend Engineer at DevFest Lagos, I optimized a website for 3,500+ users, improving rendering speed by 20% and reducing load times by 30%. I also enhanced user satisfaction with a cohesive, accessible, and responsive interface.",
+			"Engineered the rebranded company website with React and TypeScript, improving cross-browser reliability by 40%. Built the PrintEazy e-commerce UI with reusable components that cut feature development time by 30%. Raised accessibility scores to 90% and boosted SEO-driven traffic by 18% through performance and metadata optimizations.",
 	},
 	{
-		period: "Jan 2024 - June 2024",
+		period: "Aug 2024 – Present",
 		role: "Frontend Developer",
-		company: "Laferla",
+		company: "DevFest Lagos (Remote)",
 		description:
-			"Developed a digital insurance card platform with Google Wallet and Apple API, boosting user adoption by 25%. Redesigned the landing page, improving authentication flows and increasing new customer acquisition by 20%, and created a user-friendly dashboard, raising user retention by 15%.",
+			"Delivered high-performance features for the 2024/2025 event platforms serving 4,000+ attendees. Applied WCAG 2.1 AA standards, raising accessibility scores from 82% to 96%. Created reusable components and a style guide that reduced page rollout time by 25%.",
 	},
 	{
-		period: "July 2023 - Nov 2023",
+		period: "Feb 2024 – Aug 2024",
 		role: "Frontend Developer",
-		company: "MEGA League",
+		company: "Laferla (Remote)",
 		description:
-			"Designed and maintained the frontend for a global platform connecting STEM and AI students, boosting user engagement by 35% and ensuring stability during high-traffic hackathons.",
+			"Built a responsive digital insurance card platform integrated with Google Wallet and Apple APIs, increasing adoption by 25%. Improved onboarding flows, driving 20% growth in new sign-ups. Optimized dashboard performance with lazy loading and code splitting, cutting navigation time by 35%.",
 	},
 ];
