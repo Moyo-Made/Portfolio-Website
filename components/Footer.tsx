@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Links, links, socials } from "@/data/footer";
 import { ArrowUpRight, ExternalLink, Mail } from "lucide-react";
 import React, { useState } from "react";
@@ -38,29 +39,45 @@ const Footer = () => {
 	const renderLink = (link: Links) => {
 		if (link.isExternal) {
 			return (
-				<a
+				<motion.a
 					key={link.id}
 					href={link.id}
 					target="_blank"
 					rel="noopener noreferrer"
-					className="group flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300"
+					className="group flex items-center text-gray-600"
+					whileHover={{ x: 5, color: "#2563eb" }}
+					transition={{ duration: 0.2 }}
 				>
 					<span className="mr-2">{link.name}</span>
-					<ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-				</a>
+					<motion.div
+						initial={{ opacity: 0, x: -8 }}
+						whileHover={{ opacity: 1, x: 0 }}
+						transition={{ duration: 0.3 }}
+					>
+						<ExternalLink className="w-4 h-4" />
+					</motion.div>
+				</motion.a>
 			);
 		}
 
 		return (
 			<ul>
 				<li key={link.id}>
-					<button
+					<motion.button
 						onClick={() => scrollToSection(link.id)}
-						className="group flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300"
+						className="group flex items-center text-gray-600"
+						whileHover={{ x: 5, color: "#2563eb" }}
+						transition={{ duration: 0.2 }}
 					>
 						<span className="mr-2">{link.name}</span>
-						<ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-					</button>
+						<motion.div
+							initial={{ opacity: 0, x: -8 }}
+							whileHover={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.3 }}
+						>
+							<ArrowUpRight className="w-4 h-4" />
+						</motion.div>
+					</motion.button>
 				</li>
 			</ul>
 		);
@@ -73,11 +90,18 @@ const Footer = () => {
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
 					{/* About Section */}
-					<div className="lg:col-span-1">
+					<motion.div
+						className="lg:col-span-1"
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-100px" }}
+						transition={{ duration: 0.6 }}
+					>
 						<div className="space-y-6">
-							<h3 className="text-2xl font-bold text-gray-900 ">
+							<h3 className="text-2xl font-bold text-gray-900">
 								Let&#39;s Create Together
 							</h3>
+
 							<p className="text-gray-600 leading-relaxed">
 								I&#39;m always excited to connect with fellow developers,
 								potential clients, and anyone passionate about technology.
@@ -85,35 +109,62 @@ const Footer = () => {
 								I&#39;m here to collaborate.
 							</p>
 							<div className="flex flex-wrap gap-3">
-								{socials.map((social) => (
-									<a
+								{socials.map((social, index) => (
+									<motion.a
 										key={social.label}
 										href={social.href}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 group"
+										className="p-2 rounded-lg group"
 										aria-label={social.label}
+										initial={{ opacity: 0, scale: 0.8 }}
+										whileInView={{ opacity: 1, scale: 1 }}
+										viewport={{ once: true }}
+										transition={{ duration: 0.3, delay: index * 0.1 }}
+										whileHover={{
+											scale: 1.1,
+											y: -3,
+											backgroundColor: "#f3f4f6",
+										}}
+										whileTap={{ scale: 0.95 }}
 									>
 										<social.icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" />
-									</a>
+									</motion.a>
 								))}
 							</div>
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Quick Links */}
-					<div className="lg:col-span-1">
+					<motion.div
+						className="lg:col-span-1"
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-100px" }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+					>
 						<h3 className="text-lg font-semibold text-gray-900 mb-6">
 							Quick Links
 						</h3>
 						<div className="grid grid-cols-2 gap-4">
 							{links.map(renderLink)}
 						</div>
-					</div>
+					</motion.div>
 
 					{/* Contact Section */}
-					<div className="lg:col-span-1">
-						<div className="bg-gray-50 rounded-2xl p-6 space-y-6">
+					<motion.div
+						className="lg:col-span-1"
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true, margin: "-100px" }}
+						transition={{ duration: 0.6, delay: 0.4 }}
+					>
+						<motion.div
+							className="bg-gray-50 rounded-2xl p-6 space-y-6"
+							whileHover={{ scale: 1.02 }}
+							transition={{ duration: 0.3 }}
+						>
+							{" "}
 							<h3 className="text-lg font-semibold text-gray-900">
 								Get in Touch
 							</h3>
@@ -122,27 +173,45 @@ const Footer = () => {
 								together to bring your ideas to life.
 							</p>
 							<div className="space-y-4">
-								<a
+								<motion.a
 									href="mailto:adegbitemoyomade2004@gmail.com"
-									className="flex items-center justify-center w-full px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300 group"
+									className="flex items-center justify-center w-full px-6 py-3 text-white bg-blue-600 rounded-lg group"
+									whileHover={{
+										scale: 1.05,
+										backgroundColor: "#2563eb",
+									}}
+									whileTap={{ scale: 0.98 }}
+									transition={{ duration: 0.2 }}
 								>
 									<Mail className="w-4 h-4 mr-2" />
 									<span>Send me an email</span>
-									<ExternalLink className="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-								</a>
+									<motion.div
+										initial={{ opacity: 0 }}
+										whileHover={{ opacity: 1 }}
+										transition={{ duration: 0.3 }}
+									>
+										<ExternalLink className="w-4 h-4 ml-2" />
+									</motion.div>
+								</motion.a>
 							</div>
-						</div>
-					</div>
+						</motion.div>
+					</motion.div>
 				</div>
 
 				{/* Bottom Bar */}
-				<div className="pt-8 border-t border-gray-100">
+				<motion.div
+					className="pt-8 border-t border-gray-100"
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{ duration: 0.6, delay: 0.6 }}
+				>
 					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="text-gray-500 text-sm">
 							© {currentYear} Moyomade. All rights reserved.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</footer>
 	);
