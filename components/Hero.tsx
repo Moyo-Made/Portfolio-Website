@@ -120,7 +120,7 @@ const Hero = () => {
 				>
 					<div className="aspect-square rounded-full overflow-hidden bg-gray-900 mt-0 w-[280px] sm:w-[300px] md:mt-20 lg:mt-0 md:w-[350px] lg:w-[450px]">
 						<Image
-							src="/images/profile.PNG"
+							src="/images/blue.png"
 							alt="Profile"
 							width={1920}
 							height={1920}
