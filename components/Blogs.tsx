@@ -19,18 +19,24 @@ const BlogSection = () => {
 		<div id="blogs" className="py-10 bg-white">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
-					className="text-center mb-10"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-100px" }}
 					transition={{ duration: 0.6 }}
 				>
-					<h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+					<h2 className="text-lg uppercase tracking-wider text-gray-600">
 						Blog & Articles
 					</h2>
-					<p className="text-xl text-gray-600">
-						Sharing knowledge and experiences in web development and my persoanl
-						development
+					<motion.div
+						className="h-[2px] bg-gray-500"
+						initial={{ width: 0 }}
+						whileInView={{ width: "6rem" }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+						style={{ width: 0 }}
+					/>
+					<p className="text-xl text-gray-600 mb-10 mt-3">
+						Thoughts on tech, growth, and the journey — written from Lagos.
 					</p>
 				</motion.div>
 

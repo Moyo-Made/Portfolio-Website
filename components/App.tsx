@@ -7,7 +7,7 @@ import React from "react";
 import Portfolio from "@/components/Portfolio";
 import BlogSection from "@/components/Blogs";
 import Footer from "@/components/Footer";
-import Achievements from "./Achievements";
+import Impact from "./Impact";
 
 const App = () => {
 	return (
@@ -16,9 +16,9 @@ const App = () => {
 			<Hero />
 			<About />
 			<Services />
+			<Impact />
 			<Experience />
 			<Portfolio />
-			<Achievements />
 			<BlogSection />
 			<Footer />
 		</div>

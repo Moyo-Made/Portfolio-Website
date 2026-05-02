@@ -1,13 +1,7 @@
-import {
-	Github,
-	Linkedin,
-	Mail,
-	ExternalLink,
-	ArrowUpRight,
-} from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { RiTwitterXFill } from "react-icons/ri";
 
-export interface Links{
+export interface Links {
 	name: string;
 	id: string;
 	isExternal: boolean;
@@ -16,13 +10,9 @@ export interface Links{
 export const links: Links[] = [
 	{ name: "About", id: "about", isExternal: false },
 	{ name: "Projects", id: "portfolio", isExternal: false },
+	{ name: "Impact", id: "impact", isExternal: false },
 	{ name: "Blog", id: "blogs", isExternal: false },
 	{ name: "Contact", id: "contact", isExternal: false },
-	{
-		name: "Resume",
-		id: "https://drive.google.com/file/d/1TiES4-Klm9nzXPImviYQbSZ2HdBOyJD-/view?usp=drive_link",
-		isExternal: true,
-	},
 	{ name: "Skills", id: "skills", isExternal: false },
 ];
 

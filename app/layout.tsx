@@ -10,13 +10,12 @@ const barlowSemiCondensed = Barlow_Semi_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: "Moyomade | Frontend Developer",
-  description: 
-"Welcome to Moyomade's portfolio. Explore projects and skills of a passionate frontend developer.",
-icons: {
-  icon: '/favicon.png',
-},
-
+  title: "Moyomade Adegbite — Developer, Speaker & Youth Ambassador",
+  description:
+    "Moyomade Adegbite is a software developer, public speaker, and Lagos State Youth Ambassador building software and fighting for quality education across Africa.",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

@@ -62,18 +62,24 @@ const Portfolio = () => {
 		<div id="projects" className="py-10 bg-gray-50">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div
-					className="text-center"
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true, margin: "-100px" }}
 					transition={{ duration: 0.6 }}
 				>
-					<h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-5">
+					<h2 className="text-lg uppercase tracking-wider text-gray-600">
 						My Projects
 					</h2>
-					<p className="text-xl text-gray-600 mb-10">
-						Here are some of my recent works that showcase my skills and passion
-						for development.
+					<motion.div
+						className="h-[2px] bg-gray-500"
+						initial={{ width: 0 }}
+						whileInView={{ width: "5rem" }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+						style={{ width: 0 }}
+					/>
+					<p className="text-xl text-gray-600 mb-10 mt-3">
+						Real products, real users, real impact.
 					</p>
 				</motion.div>
 

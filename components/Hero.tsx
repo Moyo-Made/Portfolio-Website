@@ -9,6 +9,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const scrollTo = (id: string) => {
+	const element = document.getElementById(id);
+	element?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
 const Hero = () => {
 	return (
 		<div
@@ -16,7 +21,6 @@ const Hero = () => {
 			className="first-letter:relative min-h-screen bg-white flex items-center px-4 md:px-8 lg:px-16"
 		>
 			<div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 md:gap-36 min-h-screen mt-20 sm:mt-0">
-				{/* Left Content */}
 				<motion.div
 					className="flex-1 space-y-6 ml-0 sm:ml-16"
 					initial={{ opacity: 0, y: 30 }}
@@ -30,7 +34,7 @@ const Hero = () => {
 						transition={{ duration: 0.5, delay: 0.2 }}
 					>
 						<h2 className="text-md uppercase tracking-wider text-gray-600">
-							Hello, My name is
+							Moyo. Made to create. 
 						</h2>
 
 						<motion.div
@@ -40,6 +44,7 @@ const Hero = () => {
 							transition={{ duration: 0.6, delay: 0.4 }}
 						/>
 					</motion.div>
+
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
@@ -48,24 +53,42 @@ const Hero = () => {
 						<h1 className="text-5xl md:text-6xl font-semibold mt-2">
 							Moyomade Adegbite
 						</h1>
-						<h3 className="text-lg md:text-xl text-gray-600 mt-2">
-							Building Scalable, High-Performance Frontend Experiences
+						<h3 className="text-lg md:text-xl text-gray-600 mt-2 max-w-xl">
+							From Ajegunle to every stage. Building software and fighting for
+							quality education across Africa.
 						</h3>
 					</motion.div>
 
 					<div className="space-y-2 pt-1">
-						<div className="flex items-center space-x-2">
-							<p className="text-lg text-gray-600 max-w-[500px]">
-								I’m a frontend developer with 3+ years of experience building
-								responsive, accessible, and high-performance web applications
-								using React, Next.js, and TypeScript. I’ve contributed to
-								products across EdTech, SocialEdTech, and FinTech, including a
-								ticketing platform for 4,000+ users and a full UGC marketplace
-								built end-to-end. I create scalable, maintainable interfaces
-								that deliver measurable impact.
-							</p>
-						</div>
+						<p className="text-lg text-gray-600 max-w-[500px] font-medium">
+							Software Developer · Public Speaker · Lagos State Youth Ambassador
+						</p>
 
+						<motion.div
+							className="flex items-center gap-4 pt-3"
+							initial={{ opacity: 0, y: 10 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.7 }}
+						>
+							<motion.button
+								onClick={() => scrollTo("projects")}
+								className="bg-gray-900 text-white px-7 py-3 rounded-lg text-sm font-medium tracking-wide hover:bg-gray-700 transition-all duration-200"
+								whileHover={{ scale: 1.03 }}
+								whileTap={{ scale: 0.97 }}
+							>
+								See my work
+							</motion.button>
+							<motion.button
+								onClick={() => scrollTo("about")}
+								className="border border-gray-300 text-gray-700 px-7 py-3 rounded-lg text-sm font-medium tracking-wide hover:border-gray-900 hover:text-gray-900 transition-all duration-200"
+								whileHover={{ scale: 1.03 }}
+								whileTap={{ scale: 0.97 }}
+							>
+								My story ↗
+							</motion.button>
+						</motion.div>
+
+						{/* Social Icons */}
 						<motion.div
 							className="flex items-center space-x-4 pt-4"
 							initial={{ opacity: 0, y: 10 }}
@@ -80,7 +103,6 @@ const Hero = () => {
 									<FaGithub size={20} />
 								</Link>
 							</motion.div>
-
 							<motion.div
 								whileHover={{ scale: 1.1, y: -2 }}
 								transition={{ duration: 0.2 }}
@@ -89,7 +111,6 @@ const Hero = () => {
 									<FaLinkedin size={20} />
 								</Link>
 							</motion.div>
-
 							<motion.div
 								whileHover={{ scale: 1.1, y: -2 }}
 								transition={{ duration: 0.2 }}
@@ -98,7 +119,6 @@ const Hero = () => {
 									<FaSquareXTwitter size={20} />
 								</Link>
 							</motion.div>
-
 							<motion.div
 								whileHover={{ scale: 1.1, y: -2 }}
 								transition={{ duration: 0.2 }}

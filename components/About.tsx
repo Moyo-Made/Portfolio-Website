@@ -27,7 +27,7 @@ const About = () => {
 				<motion.div
 					className="w-20 h-[2px] bg-gray-500"
 					initial={{ width: 0 }}
-					whileInView={{ width: "5rem" }}
+					whileInView={{ width: "4rem" }}
 					viewport={{ once: true }}
 					transition={{ duration: 0.6, delay: 0.2 }}
 				/>
@@ -40,10 +40,9 @@ const About = () => {
 				viewport={{ once: true, margin: "-100px" }}
 				transition={{ duration: 0.6, delay: 0.3 }}
 			>
-				I am a frontend developer with 3 years of experience building fast,
-				responsive, and user-focused web applications. I specialise in
-				transforming ideas into clean, scalable interfaces that solve real
-				problems and deliver measurable results for clients and users.
+				I grew up in Ajegunle, Lagos. At some point, my dad made a decision that
+				changed everything. He moved us out so I could get better access to
+				education. Same Lagos, different reality.
 			</motion.h1>
 
 			<motion.div
@@ -54,7 +53,6 @@ const About = () => {
 				transition={{ duration: 0.5, delay: 0.5 }}
 			>
 				{" "}
-				{/* Left Column */}
 				<motion.div
 					initial={{ opacity: 0, x: -30 }}
 					whileInView={{ opacity: 1, x: 0 }}
@@ -64,8 +62,7 @@ const About = () => {
 					<h1
 						className={`${cardo.className} text-2xl sm:text-3xl md:text-4xl text-[#009bdf] font-semibold pt-5 leading-10`}
 					>
-						I create functional, modern, and visually consistent digital
-						experiences.
+						Now, I&apos;m doing my part to change that for others.
 					</h1>
 				</motion.div>
 				<motion.div
@@ -75,11 +72,10 @@ const About = () => {
 					transition={{ duration: 0.6, delay: 0.7 }}
 				>
 					<p className="text-lg font-normal">
-						With years of experience in frontend development, I translate client
-						requirements into modern, scalable, and intuitive web solutions.
-						I’ve worked with businesses across various industries, giving me the
-						flexibility to understand different goals and deliver outcomes
-						aligned with current best practices and technologies.
+						I&apos;m a Software Developer, Public Speaker, and Lagos State Youth
+						Ambassador. My work sits at the intersection of technology,
+						education, and communication because I believe those three things,
+						used together, can open doors that should never have been closed.
 					</p>
 
 					<motion.p
@@ -89,13 +85,15 @@ const About = () => {
 						viewport={{ once: true, margin: "-100px" }}
 						transition={{ duration: 0.5, delay: 0.9 }}
 					>
-						During this time, I’ve built responsive applications, landing pages,
-						interactive components, and refined web interfaces. My work focuses
-						on clarity, usability, and high-quality execution. Beyond
-						implementation, I provide strategic insight—offering options,
-						identifying improvements, and collaborating effectively to achieve
-						the strongest results on every project.
+						As a Frontend Engineer, I&apos;ve built platforms across EdTech,
+						FinTech, and community systems including contributing to the
+						Google Developer ecosystem through DevFest Lagos, serving 4,000+
+						attendees. But the code is only part of the story. Everything I do
+						points in one direction: <span className="font-medium">making learning and opportunities easier to
+						access, especially for young people who don&apos;t always get the
+						right exposure early.</span>
 					</motion.p>
+
 				</motion.div>
 			</motion.div>
 		</div>

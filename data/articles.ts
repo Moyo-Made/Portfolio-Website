@@ -10,8 +10,10 @@ interface Blog {
 
 export const blogs: Blog[] = [
 	{
-		title: "From Introvert to Tech: A Journey of Personal Growth and Community Connection",
-		excerpt: "Moyomade shares his transformative journey from a high school extrovert and sports enthusiast to an introspective tech enthusiast. After a sports injury ended his athletic dreams, Moyomade embraced technology, starting with coding on his smartphone. Initially isolating himself, he soon realized the importance of community, finding mentorship and opportunities through tech networks. His story highlights resilience, the power of community, and the rewarding path of continuous learning and growth in the tech world. Moyomade encourages others to embrace change, connect with peers, and take bold steps into the tech industry.",
+		title:
+			"From Introvert to Tech: A Journey of Personal Growth and Community Connection",
+		excerpt:
+			"From high school extrovert and sports enthusiast to tech builder. My journey wasn't linear. After a sports injury ended my athletic dreams, I found technology. I started coding on my smartphone, isolated at first, then slowly discovered that community changes everything. This is the story of resilience, mentorship, and what happens when you take a bold step into the unknown.",
 		date: "2024-08-11",
 		readTime: "3 min read",
 		category: "Personal Development",
@@ -20,21 +22,23 @@ export const blogs: Blog[] = [
 	},
 	{
 		title: "My Journey of Growth: Volunteering at Web3 Afrika Lagos",
-		excerpt: "Moyomade shares his personal growth journey in improving public speaking and communication skills. Starting with a supportive online community, he practiced consistently, gaining confidence over time. Volunteering at Web3 Afrika Lagos pushed him further, allowing him to engage directly with attendees and other volunteers. This experience not only boosted his confidence but also helped him build meaningful connections, marking significant progress in his journey of personal and professional growth.",
+		excerpt:
+			"I've been on a deliberate journey to become a better communicator and public speaker. Volunteering at Web3 Afrika Lagos was a turning point putting me directly in front of attendees and fellow volunteers, testing everything I'd been practising. This is what I learned about confidence, connection, and showing up before you feel ready.",
 		date: "2024-09-23",
 		readTime: "3 min read",
 		category: "Personal Development",
 		image: "/images/afrika.webp",
 		link: "https://medium.com/@adegbitemoyomade2004/my-journey-of-growth-volunteering-at-web3-afrika-lagos-a939b3a35efb",
-
 	},
 	{
-		title: "Masking vs Encryption in JavaScript: A Comprehensive Guide for Secure Data Handling",
-		excerpt: "In this article, I explored the critical differences between masking and encryption in JavaScript, inspired by his experience while developing a finance dashboard. He delves into the definitions, purposes, and applications of both techniques, illustrating how masking obscures parts of sensitive data for limited visibility, while encryption transforms data into an unreadable format for confidentiality. Through practical examples and use cases, Moyomade emphasizes the importance of choosing the right method for secure data handling in development projects.",
+		title:
+			"Masking vs Encryption in JavaScript: A Comprehensive Guide for Secure Data Handling",
+		excerpt:
+			"While building a finance dashboard, I ran into a question that stopped me: should I mask this data or encrypt it? They sound similar but do completely different things. In this piece I break down both techniques with practical JavaScript examples so you can make the right call in your own projects.",
 		date: "2024-7-11",
 		readTime: "3 min read",
 		category: "Technical",
 		image: "/images/masking.webp",
 		link: "https://medium.com/@adegbitemoyomade2004/masking-vs-encryption-in-javascript-a-comprehensive-guide-for-secure-data-handling-9c5032326461",
-	}
+	},
 ];

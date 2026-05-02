@@ -26,6 +26,20 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
 	{
+		period: "Feb 2026 – Present",
+		role: "Operations & Logistics Lead",
+		company: "Lagos State Youth Ambassador Programme",
+		description:
+			"Appointed as Operations & Logistics Lead for the Lagos State Youth Ambassador Programme. Contributing to state-level youth initiatives and leading operations for the programme's first major project, focused on youth engagement and education access across Lagos.",
+	},
+	{
+		period: "2024 – Present",
+		role: "Public Speaker",
+		company: "Independent — National Platforms",
+		description:
+			"Award-winning public speaker featured on TVC (The Big Issue) and Rave TV as a Lagos State Youth Ambassador, speaking on youth participation and nation building. Won Best Debater at the LASU Debate Society intra-competition ('25/'26) after competing across multiple rounds.",
+	},
+	{
 		period: "Nov 2024 – Jun 2025",
 		role: "Frontend Developer",
 		company: "TechSynergy (Remote)",

@@ -99,14 +99,13 @@ const Footer = () => {
 					>
 						<div className="space-y-6">
 							<h3 className="text-2xl font-bold text-gray-900">
-								Let&#39;s Create Together
+								Let&apos;s create something meaningful.
 							</h3>
 
 							<p className="text-gray-600 leading-relaxed">
-								I&#39;m always excited to connect with fellow developers,
-								potential clients, and anyone passionate about technology.
-								Whether you have a project in mind or just want to say hello,
-								I&#39;m here to collaborate.
+								Whether you want to hire me as a developer, invite me to speak,
+								or collaborate on education and youth initiatives — I&apos;m
+								open to it all.
 							</p>
 							<div className="flex flex-wrap gap-3">
 								{socials.map((social, index) => (
@@ -168,10 +167,20 @@ const Footer = () => {
 							<h3 className="text-lg font-semibold text-gray-900">
 								Get in Touch
 							</h3>
-							<p className="text-gray-600">
-								Have a project in mind? Let&#39;s discuss how we can work
-								together to bring your ideas to life.
-							</p>
+							<div className="flex flex-wrap gap-2">
+								{[
+									"Hire me as a dev",
+									"Invite me to speak",
+									"Collaborate on youth & education",
+								].map((label) => (
+									<span
+										key={label}
+										className="text-xs text-gray-500 border border-gray-200 rounded-full px-3 py-1"
+									>
+										{label}
+									</span>
+								))}
+							</div>
 							<div className="space-y-4">
 								<motion.a
 									href="mailto:adegbitemoyomade2004@gmail.com"
@@ -208,7 +217,8 @@ const Footer = () => {
 				>
 					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
 						<p className="text-gray-500 text-sm">
-							© {currentYear} Moyomade. All rights reserved.
+							© {currentYear} Moyomade Adegbite. From Ajegunle to every stage.
+							🇳🇬
 						</p>
 					</div>
 				</motion.div>

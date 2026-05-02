@@ -9,51 +9,33 @@ interface Project {
 
 export const projects: Project[] = [
 	{
-		title: "DevFest Lagos 2025 Ticketing Platform",
+		title: "DevFest Lagos 2025 — Ticketing Platform",
 		image: "/images/ticket.png",
 		description:
-			"Developed core parts of the DevFest Lagos 2025 ticketing platform, including ticket selection, attendee form flow, and registration logic. Optimized performance and responsiveness for 4,000+ users, with seamless navigation, accessibility, and smooth checkout interactions.",
-		tags: ["Next.js", "Responsive UI", "State management", "API integration"],
+			"Contributing to the Google Developer ecosystem, I built core parts of the ticketing platform for DevFest Lagos 2025 — one of Nigeria's largest developer conferences. Engineered the ticket selection flow, attendee registration logic, and checkout experience, optimised for 4,000+ concurrent users with zero downtime.",
+		tags: ["Next.js", "Responsive UI", "State Management", "API Integration"],
 		demo: "https://tickets.devfestlagos.com/",
 	},
 	{
-		title: "DevFest Lagos 2024 Official Website",
+		title: "DevFest Lagos 2024 — Official Website",
 		image: "/images/devfest.PNG",
 		description:
-			"Built key sections of the DevFest Lagos 2024 website with WCAG 2.1 AA accessibility, responsive design, and optimized Core Web Vitals. Implemented reusable UI components and SEO-friendly metadata, ensuring smooth performance for thousands of daily visitors.",
+			"Built key sections of the official DevFest Lagos 2024 website, serving thousands of daily visitors in the lead-up to the event. Implemented WCAG 2.1 AA accessibility standards, raising accessibility scores from 82% to 96%, and delivered reusable UI components that cut page rollout time by 25%.",
 		tags: ["Next.js", "TypeScript", "SCSS"],
 		demo: "https://2024.devfestlagos.com/",
 	},
 	{
-		title: "Go-Digital at Laferla: Digital Insurance Card Platform",
+		title: "Go-Digital — Digital Insurance Card Platform",
 		image: "/images/dc.PNG",
 		description:
-			"Built a digital insurance card platform integrated with Google Wallet & Apple APIs, increasing user adoption. Redesigned authentication flows and dashboards, improving onboarding and retention with accessible and scalable UI components.",
+			"Laferla needed to move their insurance cards from physical to digital. I built the platform — integrated with Google Wallet and Apple Wallet APIs — increasing user adoption by 25%. Redesigned authentication flows and dashboards, improving onboarding and driving 20% growth in new sign-ups.",
 		tags: ["Next.js", "TypeScript", "Tailwind CSS", "Redux"],
 	},
 	{
-		title: "Promptopia: AI-Powered Prompt Sharing Platform",
-		image: "/images/prompt.PNG",
-		description:
-			"Open-source AI prompting tool for discovering, creating, and sharing prompts. Developed a user-friendly interface leveraging AI to enhance creativity and collaboration within the community.",
-		github: "https://github.com/Moyo-Made/Promptopia",
-		demo: "https://promptopia-peach-one.vercel.app/",
-		tags: ["JavaScript", "Next.js", "MongoDB", "CSS"],
-	},
-	{
-		title: "Mega League: Global STEM and AI Collaboration Platform",
+		title: "Mega League — Global STEM & AI Collaboration Platform",
 		image: "/images/mega home.PNG",
 		description:
-			"Maintained the frontend for a global STEM & AI collaboration platform, enhancing responsiveness and performance, resulting in a 35% increase in user engagement. Ensured platform stability during high-traffic events.",
+			"Maintained and improved the frontend for a global STEM and AI collaboration platform serving students and educators across multiple countries. Performance and responsiveness improvements led to a 35% increase in user engagement, with platform stability maintained throughout high-traffic events.",
 		tags: ["JavaScript", "React.js", "CSS"],
-	},
-	{
-		title: "Hoobank: Next-Generation Payment Method",
-		image: "/images/nextgen.PNG",
-		description:
-			"Developed the frontend for a modern FinTech platform helping users find optimal credit card options. Simplified complex financial data into an intuitive, user-friendly interface.",
-		tags: ["JavaScript", "React.js", "CSS"],
-		github: "https://github.com/Moyo-Made/Modern-banking-app",
-		demo: "https://hoobankss.netlify.app/",
 	},
 ];

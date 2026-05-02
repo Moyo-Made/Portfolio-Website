@@ -11,7 +11,6 @@ const Navbar = () => {
 	const [clickedSection, setClickedSection] = useState("");
 	const NAV_HEIGHT = 64;
 
-	// Determine if a section is substantially visible
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	interface SectionElement {
 		id: string;
@@ -26,15 +25,14 @@ const Navbar = () => {
 				Math.min(rect.bottom, window.innerHeight) -
 				Math.max(rect.top, NAV_HEIGHT);
 			const sectionHeight = rect.height;
-			return visibleHeight > sectionHeight * 0.3; // 30% visibility threshold
+			return visibleHeight > sectionHeight * 0.3; 
 		},
 		[]
 	);
 
 	useEffect(() => {
 		const handleScroll = () => {
-			// Only check for new active section if we're not in a click transition
-			// or if the clicked section is substantially visible
+			
 			const clickedElement = clickedSection
 				? document.getElementById(clickedSection)
 				: null;
@@ -51,7 +49,7 @@ const Navbar = () => {
 
 				if (visibleSection) {
 					setActiveSection(visibleSection.id);
-					setClickedSection(""); // Clear clicked section when naturally scrolling
+					setClickedSection("");
 				}
 			}
 		};
@@ -61,7 +59,7 @@ const Navbar = () => {
 		};
 
 		window.addEventListener("scroll", debouncedHandleScroll);
-		handleScroll(); // Initial check
+		handleScroll(); 
 
 		return () => window.removeEventListener("scroll", debouncedHandleScroll);
 	}, [clickedSection, isSubstantiallyVisible]);
@@ -69,7 +67,7 @@ const Navbar = () => {
 	const scrollToSection = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
-			// Immediately set active and clicked section
+
 			setActiveSection(id);
 			setClickedSection(id);
 
@@ -81,7 +79,6 @@ const Navbar = () => {
 				behavior: "smooth",
 			});
 
-			// Clear clicked section after scroll animation (roughly 1 second)
 			setTimeout(() => {
 				setClickedSection("");
 			}, 1000);
@@ -97,7 +94,7 @@ const Navbar = () => {
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<motion.div className="flex justify-between h-16 items-center">
-					{/* Logo */}
+		
 					<motion.div
 						className="flex items-center"
 						initial={{ opacity: 0, x: -20 }}
@@ -112,7 +109,7 @@ const Navbar = () => {
 						</Link>
 					</motion.div>
 
-					{/* Desktop Navigation */}
+
 					<ul className="hidden md:flex items-center space-x-8">
 						{navItems.map(({ id, label }, index) => (
 							<motion.li
@@ -134,7 +131,7 @@ const Navbar = () => {
 							</motion.li>
 						))}
 					</ul>
-					{/* Mobile Menu Button */}
+
 					<motion.div
 						className="md:hidden"
 						initial={{ opacity: 0, x: 20 }}
@@ -174,7 +171,6 @@ const Navbar = () => {
 				</motion.div>
 			</div>
 
-			{/* Mobile Menu */}
 			<motion.div
 				className="md:hidden bg-white/80 backdrop-blur-md shadow-lg border-t border-white/20"
 				initial={{ opacity: 0, height: 0 }}
